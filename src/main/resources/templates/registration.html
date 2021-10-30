@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+</head>
+<body>
+<label th:value="${message}"></label>
+<form action="http://localhost:8081/sign" method="get">
+    <button type="submit">Вход</button>
+</form>
+<form method="post">
+    <input name="login" type="text" placeholder="login"/>
+    <input name="password" type="text" placeholder="password">
+    <button type="submit">Зарегестрироваться</button>
+</form>
+</body>
+</html>
