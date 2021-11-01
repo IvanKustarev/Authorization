@@ -6,13 +6,29 @@
 </head>
 <body>
 <label th:value="${message}"></label>
-<form action="http://localhost:8081/sign" method="get">
-    <button type="submit">Вход</button>
+<form action="http://localhost:8081/authorisation/sign" method="get">
+    <button type="submit">Перейти ко входу</button>
 </form>
 <form method="post">
-    <input name="login" type="text" placeholder="login"/>
-    <input name="password" type="text" placeholder="password">
-    <button type="submit">Зарегестрироваться</button>
+    <div style="margin: auto">
+        <span>Имя пользователя:</span>
+        <input name="login" type="text" placeholder="login"/>
+    </div>
+    <div style="margin: auto">
+        <span>Пароль:</span>
+        <input name="password" type="password" placeholder="password">
+    </div>
+    <div style="margin: auto">
+        <span>ФИО:</span>
+        <input name="fullName" type="text" placeholder="ФИО">
+    </div>
+    <div style="margin: auto">
+        <span>Адрес:</span>
+        <input name="address" type="text" placeholder="адрес">
+    </div>
+    <div style="margin: auto">
+        <button type="submit">Зарегистрироваться</button>
+    </div>
 </form>
 </body>
 </html>

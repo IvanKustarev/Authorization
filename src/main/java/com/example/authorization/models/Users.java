@@ -14,7 +14,7 @@ public class Users {
     private String password;
     private String fullName;
     private String address;
-    private String balance;
+    private Long balance;
     private Boolean subscriber;
     private Boolean adminRoot;
 
@@ -58,11 +58,11 @@ public class Users {
         this.fullName = fullName;
     }
 
-    public String getBalance() {
+    public Long getBalance() {
         return balance;
     }
 
-    public void setBalance(String balance) {
+    public void setBalance(Long balance) {
         this.balance = balance;
     }
 
