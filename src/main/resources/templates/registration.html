@@ -6,7 +6,8 @@
 </head>
 <body>
 <label th:value="${message}"></label>
-<form action="http://localhost:8081/authorisation/sign" method="get">
+<!--<form action="http://localhost:8081/authorization/sign" method="get">-->
+<form action="/authorization/sign" method="get">
     <button type="submit">Перейти ко входу</button>
 </form>
 <form method="post">
